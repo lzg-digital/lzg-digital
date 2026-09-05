@@ -4,7 +4,7 @@
 1. Open `assets/js/config.js`.
 2. Replace the placeholder email, phone and WhatsApp number.
 3. Replace `SITE_CONFIG.seo.siteUrl` with the final GitHub Pages URL or custom domain.
-4. Replace every occurrence of `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/` with your real site URL. This placeholder appears in:
+4. Replace every occurrence of `https://lzg-digital.github.io/lzg-digital/` with your real site URL. This placeholder appears in:
    - `robots.txt` (1 line)
    - `sitemap.xml` (10 URLs)
    - the `<link rel="canonical">` and Open Graph tags in every page's `<head>` (11 HTML files)
