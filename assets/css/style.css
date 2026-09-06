@@ -75,3 +75,29 @@ form{display:grid;gap:14px}label{font-size:.85rem;color:#bbb}input,textarea{widt
 .scripture{margin-top:36px;padding-top:24px;border-top:1px solid var(--line);text-align:center;color:#c8c8c8;font-size:.86rem;letter-spacing:.01em}
 .scripture cite{display:block;margin-top:6px;color:#777;font-style:normal;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase}
 @media(max-width:520px){.scripture{font-size:.8rem}}
+
+/* Premium 3D local-growth hero */
+.hero-3d{min-height:560px;border-radius:34px;background:
+  radial-gradient(circle at 50% 48%,rgba(255,255,255,.10),transparent 24%),
+  radial-gradient(circle at 50% 60%,rgba(255,255,255,.05),transparent 48%),
+  linear-gradient(145deg,#171a1d 0%,#090a0c 58%,#121417 100%);}
+.hero-3d:before,.hero-3d:after{content:"";position:absolute;pointer-events:none;border-radius:50%;}
+.hero-3d:before{width:7px;height:7px;background:#fff;left:14%;top:17%;box-shadow:120px 70px 0 1px rgba(255,255,255,.55),430px 35px 0 0 rgba(255,255,255,.7),520px 210px 0 1px rgba(255,255,255,.35),90px 360px 0 0 rgba(255,255,255,.35),380px 420px 0 0 rgba(255,255,255,.45);filter:drop-shadow(0 0 7px #fff);}
+.hero-3d:after{inset:8%;border:1px solid rgba(255,255,255,.04);box-shadow:inset 0 0 90px rgba(255,255,255,.025);}
+.growth-scene{position:relative;width:100%;height:100%;max-width:720px;z-index:2;filter:drop-shadow(0 28px 45px rgba(0,0,0,.65));animation:sceneFloat 7s ease-in-out infinite;}
+.hero-grid{position:absolute;inset:auto 6% 7%;height:34%;opacity:.16;background:linear-gradient(rgba(255,255,255,.18) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.18) 1px,transparent 1px);background-size:34px 18px;transform:perspective(280px) rotateX(62deg);mask-image:linear-gradient(to top,black,transparent);}
+.orbit{position:absolute;left:50%;top:57%;border:1px solid rgba(255,255,255,.15);border-radius:50%;transform:translate(-50%,-50%) rotateX(67deg);z-index:1;pointer-events:none;}
+.orbit-a{width:72%;height:38%;}.orbit-b{width:54%;height:29%;opacity:.6;}
+.floating-card{animation:cardFloat 5.5s ease-in-out infinite;transform-box:fill-box;transform-origin:center;}
+.floating-card:nth-of-type(2){animation-delay:-1.2s}.floating-card:nth-of-type(3){animation-delay:-2.2s}.floating-card:nth-of-type(4){animation-delay:-3.4s}
+.connection-lines path{stroke-dasharray:7 8;animation:dashMove 5s linear infinite;}
+.energy-points circle{animation:pulsePoint 2.2s ease-in-out infinite;}
+.store{animation:storeLift 6s ease-in-out infinite;transform-box:fill-box;transform-origin:center;}
+@keyframes sceneFloat{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-7px) scale(1.012)}}
+@keyframes cardFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes storeLift{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes dashMove{to{stroke-dashoffset:-60}}
+@keyframes pulsePoint{0%,100%{opacity:.45;r:3px}50%{opacity:1;r:5px}}
+@media(max-width:900px){.hero-3d{min-height:500px}.growth-scene{max-width:650px}}
+@media(max-width:520px){.hero-3d{min-height:390px;border-radius:26px}.growth-scene{width:112%;margin-left:-6%}.hero-grid{inset:auto 4% 5%;height:28%}.orbit-a{width:86%;}.orbit-b{width:67%;}}
+@media(prefers-reduced-motion:reduce){.growth-scene,.floating-card,.store,.connection-lines path,.energy-points circle{animation:none!important}}

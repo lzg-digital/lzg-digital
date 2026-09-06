@@ -12,9 +12,9 @@ const SITE_CONFIG = {
   },
 
   contact: {
-    email: "YOUR-EMAIL@example.com",
-    phone: "+255 XXX XXX XXX",
-    whatsapp: "+255 XXX XXX XXX",
+    email: "Ricopack0117@gmail.com",
+    phone: "0681 195 089",
+    whatsapp: "+255681195089",
     location: "Online-based",
     responseNote: "Online enquiries are handled during our listed availability hours."
   },
@@ -60,7 +60,7 @@ const SITE_CONFIG = {
   },
 
   seo: {
-    siteUrl: "https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/",
+    siteUrl: "https://lzg-digital.github.io/lzg-digital/",
     defaultTitle: "LZG Digital | Local SEO, MEO & Web Development",
     defaultDescription:
       "LZG Digital helps local businesses improve their Google visibility with Local SEO, MEO, professional websites, digital authority and ongoing website management."
