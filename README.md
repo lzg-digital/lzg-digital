@@ -46,3 +46,6 @@ A final Lighthouse/PageSpeed score cannot be honestly guaranteed until the site 
 - Keep the repository free of private keys, tokens, passwords, and `.env` files.
 - Enable HTTPS enforcement in the final GitHub Pages/custom-domain deployment.
 - For strongest response-header control (HSTS, X-Content-Type-Options, etc.), place the site behind a hosting/CDN layer that supports custom HTTP response headers (for example, Cloudflare).
+
+
+Legal pages: Privacy Policy, Terms & Conditions, and Cookie Policy are available under `/legal/`.
