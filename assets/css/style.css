@@ -103,3 +103,13 @@ form{display:grid;gap:14px}label{font-size:.85rem;color:#bbb}input,textarea{widt
 @media(prefers-reduced-motion:reduce){.growth-scene,.floating-card,.store,.connection-lines path,.energy-points circle{animation:none!important}}
 
 .legal-page{padding:72px 0 96px}.legal-page h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.05;letter-spacing:-.045em;margin:0 0 16px}.legal-page .lead{color:var(--muted);max-width:760px;font-size:1.08rem}.legal-card{margin-top:34px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px}.legal-card h2{margin-top:30px}.legal-card h2:first-child{margin-top:0}.legal-card p,.legal-card li{color:#d2d2d2}.legal-card ul{padding-left:22px}.legal-meta{font-size:.9rem;color:var(--muted)}
+
+/* Final production polish */
+.menu:focus-visible,.nav-links a:focus-visible,.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.form-note{font-size:.78rem;line-height:1.55;color:#8f8f8f;margin:0}
+@media(max-width:520px){.growth-scene{filter:none}.hero-3d:after{display:none}}
+
+/* Final production polish */
+.menu:focus-visible,.nav-links a:focus-visible,.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.form-note{font-size:.78rem;line-height:1.55;color:#8f8f8f;margin:0}
+@media(max-width:520px){.growth-scene{filter:none}.hero-3d:after{display:none}}

@@ -5,10 +5,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector("[data-menu]");
   const nav = document.querySelector(".nav-links");
   if (menu && nav) {
-    menu.addEventListener("click", () => {
-      const open = nav.classList.toggle("open");
+    const setMenu = (open) => {
+      nav.classList.toggle("open", open);
       menu.setAttribute("aria-expanded", String(open));
       menu.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    };
+    menu.addEventListener("click", () => setMenu(!nav.classList.contains("open")));
+    nav.addEventListener("click", (event) => {
+      if (event.target.closest("a")) setMenu(false);
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") setMenu(false);
     });
   }
 
